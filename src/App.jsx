@@ -1,12 +1,12 @@
 import { TwitterFollowCard } from "./TwitterFollowCard";
-
+import './App.css'
 export function App () {
     return (
         <section className="tw-followCard-section">
-            <TwitterFollowCard isFollowing={false} userName='midudev' name='Miguel Angel Duran'/>
-            <TwitterFollowCard isFollowing userName='polgarcia' name='Leopoldo Garcia'/>
-            <TwitterFollowCard isFollowing userName='mouredev' name='Brais Moure'/>
-            <TwitterFollowCard isFollowing={false}/>
+            <TwitterFollowCard  userName='midudev' name='Miguel Angel Duran' initialIsFollowing={true}/>
+            <TwitterFollowCard  userName='polgarcia' name='Leopoldo Garcia'/>
+            <TwitterFollowCard  userName='mouredev' name='Brais Moure'/>
+            <TwitterFollowCard />
         </section>
     )
 }
